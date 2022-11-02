@@ -22,5 +22,26 @@ $("document").ready(function () {
         $(".color .car-color ul li").removeClass("on").eq(i).addClass("on")
     })
     
+    
+    
+    $(window).scroll(function(){
+
+
+        let pos = $(window).scrollTop();
+
+        if (pos >= 200) {
+            $(".aside").show()
+        }else{
+            $(".aside").hide()
+        }
+        
+        
+
+    })
+
+    $(".aside img").click(function(){
+        $("html, body").scrollTop(0)
+    })
+
 
 })
